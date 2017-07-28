@@ -1,0 +1,36 @@
+<a href [routerLink]="['/dashboard']">Back to Polls</a>
+
+<h1>{{ question.question}}</h1>
+<p>Click the Vote button to choose one</p>
+
+<!--Apologies for the buttons / votes not working. Ran out of time before I could really start troubleshooting this functionality.-->
+
+<div>
+  <table>
+    <tr>
+      <th>- Option - | </th>
+      <th>- Current Votes -</th>
+      <th>| -Action -</th>
+    </tr>
+    <tr>
+      <td>{{ question.option1 }}</td>
+      <td>{{ question.opt1Votes }} </td>
+      <button>Vote</button>
+    </tr>
+    <tr>
+      <td>{{ question.option2 }}</td>
+      <td>{{ question.opt2Votes }} </td>
+      <button>Vote</button>
+    </tr>
+    <tr>
+      <td>{{ question.option3 }} </td>
+      <td>{{ question.opt3Votes }} </td>
+      <button>Vote</button>
+    </tr>
+    <tr>
+      <td>{{ question.option4 }} </td>
+      <td>{{ question.opt4Votes }} </td>
+      <button>Vote</button>
+    </tr>
+  </table>
+</div>

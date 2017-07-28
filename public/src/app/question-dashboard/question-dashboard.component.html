@@ -1,0 +1,21 @@
+<div id="qdHeader">
+  <a href [routerLink]="['/create']">Create a New Poll</a>
+  <a href (click)="logout()">Logout</a>
+  
+</div>
+<h1>Current Polls:</h1>
+<div>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Survey Question</th>
+      <th>Date Posted</th>
+      <th>Action</th>
+    </tr>
+    <tr *ngFor="let question of questions">
+      <td> {{ question.user.name }}</td>
+      <td> <a href [routerLink]="['/poll', question._id]">{{question.question}}</a></td>
+      <td> {{ question.createdAt | date }}</td>
+    </tr>
+  </table>
+</div>

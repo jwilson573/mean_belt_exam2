@@ -1,0 +1,28 @@
+<div id="cpHeader">
+  <a href [routerLink]="['/dashboard']">Cancel</a>
+
+  <form (submit)="createQuestion()">
+    <div>
+      <label>Question: </label>
+      <input type='text' [(ngModel)]='newPoll.question' name="question">
+    </div>
+    <div>
+     <label>Option 1</label>
+      <input name="question.option1" type='text' [(ngModel)]='newPoll.option1'>
+   
+     <label>Option 2</label>
+      <input name="question.option2" type='text' [(ngModel)]='newPoll.option2'>
+   
+     <label>Option 3</label>
+      <input name="question.option3" type='text' [(ngModel)]='newPoll.option3'>
+   
+     <label>Option 4</label>
+      <input name="question.option4" type='text' [(ngModel)]='newPoll.option4'>
+    </div>
+      
+      
+      
+      
+    <button type='submit'>Create Poll</button>
+  </form>
+</div>
